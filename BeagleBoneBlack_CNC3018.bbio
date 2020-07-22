@@ -1,0 +1,26 @@
+# Text copied from: 
+# https://github.com/machinekit/machinekit-cnc/blob/master/configs/ARM/BeagleBone/CRAMPS/CRAMPS.bbio
+# Any GPIO pins driven by the PRU need to have their direction set properly
+# here.  The PRU does not do any setup of the GPIO, it just yanks on the
+# pins and assumes you have the output enables configured already
+# 
+# Direct PRU inputs and outputs do not need to be configured here, the pin
+# mux setup (which is handled by the device tree overlay) should be all
+# the setup needed.
+# 
+# Any GPIO pins driven by the hal_bb_gpio driver do not need to be
+# configured here.  The hal_bb_gpio module handles setting the output
+# enable bits properly.  These pins _can_ however be set here without
+# causing problems.  You may wish to do this for documentation or to make
+# sure the pin starts with a known value as soon as possible.
+
+# PRU pins
+P8_12 low  # X Dir Used in PRU
+P8_13 low  # X Step Used in PRU
+P8_14 low  # Y Dir Used in PRU
+P8_15 low  # Y Step Used in PRU
+P8_18 low  # Z Dir Used in PRU
+P8_19 low  # Z Step Used in PRU
+
+# hal_bb_gpio
+P9_13 low  # Enable Pin Used in hal_bb_gpio
