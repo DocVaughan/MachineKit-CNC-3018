@@ -60,6 +60,17 @@ setp hpg.stepgen.00.maxaccel        [AXIS_0]STEPGEN_MAX_ACC
 
 
 # ----- Y-axis -----
+# Axis enable chain
+newsig emcmot.01.enable bit
+sets emcmot.01.enable FALSE
+
+# Axis enable signal (net input output)
+net emcmot.01.enable axis.1.amp-enable-out hpg.stepgen.01.enable
+
+# Position command and feedback signals (net input output)
+net emcmot.01.pos-cmd axis.1.motor-pos-cmd hpg.stepgen.01.position-cmd
+net motor.01.pos-fb hpg.stepgen.01.position-fb axis.1.motor-pos-fb
+
 # Define the pins for the PRU
 #setp hpg.stepgen.01.step_type        0  # Default is step/dir
 setp hpg.stepgen.01.control-type      0  # Position mode control
@@ -74,7 +85,19 @@ setp hpg.stepgen.01.position-scale  [AXIS_1]SCALE
 setp hpg.stepgen.01.maxvel          [AXIS_1]STEPGEN_MAX_VEL
 setp hpg.stepgen.01.maxaccel        [AXIS_1]STEPGEN_MAX_ACC
 
+
 # ----- Z-axis -----
+# Axis enable chain
+newsig emcmot.02.enable bit
+sets emcmot.02.enable FALSE
+
+# Axis enable signal (net input output)
+net emcmot.02.enable axis.2.amp-enable-out hpg.stepgen.02.enable
+
+# Position command and feedback signals (net input output)
+net emcmot.02.pos-cmd axis.2.motor-pos-cmd hpg.stepgen.02.position-cmd
+net motor.02.pos-fb hpg.stepgen.02.position-fb axis.2.motor-pos-fb
+
 # Define the pins for the PRU
 #setp hpg.stepgen.02.step_type        0  # Default is step/dir
 setp hpg.stepgen.02.control-type      0  # Position mode control
@@ -89,6 +112,21 @@ setp hpg.stepgen.02.position-scale  [AXIS_2]SCALE
 setp hpg.stepgen.02.maxvel          [AXIS_2]STEPGEN_MAX_VEL
 setp hpg.stepgen.02.maxaccel        [AXIS_2]STEPGEN_MAX_ACC
 
+
+
+# ----- Standard I/O Block - EStop, Etc -----
+# Create a signal for the estop loopback
+net estop-loop iocontrol.0.user-enable-out iocontrol.0.emc-enable-in
+
+# Set up the enable pin. One is shared between all steppers. Here, we'll just 
+# turn enable the motors. To make a high signal mean enabled (the driver wants
+# enable pulled low to be on), we invert the pin
+setp bb_gpio.p9.out-13.invert 1
+
+# And attach the controller enable to the axes
+net emcmot.00.enable bb_gpio.p9.out-13
+#net emcmot.01.enable bb_gpio.p9.out-13
+#net emcmot.02.enable bb_gpio.p9.out-13
 
 
 ## Create two threads, a fast one with a period of 50 microseconds 
