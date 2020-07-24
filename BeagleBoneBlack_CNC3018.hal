@@ -128,31 +128,5 @@ net emcmot.00.enable bb_gpio.p9.out-13
 #net emcmot.01.enable bb_gpio.p9.out-13
 #net emcmot.02.enable bb_gpio.p9.out-13
 
-
-## Create two threads, a fast one with a period of 50 microseconds 
-# and a slow one with a period of 1 millisecond.
-# loadrt threads name1=step-thread period1=1000000
-# 
-# # Connect the cosine output to the hpg.00.position-cmd input - X-axis
-# net X-vel siggen.0.cosine hpg.stepgen.00.position-cmd 
-# 
-# # Connect the triangle output to the hpg.01.position-cmd - Y-axis
-# net Y-vel siggen.0.triangle hpg.stepgen.01.position-cmd 
-# 
-# # And the same for the Z-axis
-# net Z-vel siggen.0.sine hpg.stepgen.02.position-cmd
-# 
-# # Set up the enable pin. One is shared between all steppers. Here, we'll just 
-# # turn enable the motors. 
-# #
-# # To make a high signal mean enabled (the driver wants enable pulled low to be on)
-# # We invert the pin
-# setp bb_gpio.p9.out-13.invert 1
-# 
-# # Then, set it high (which, because of the inversion means it gets pulled low)
-# setp bb_gpio.p9.out-13 1
-# 
-# # And enable the step generation
-# setp hpg.stepgen.00.enable 1
-# setp hpg.stepgen.01.enable 1
-# setp hpg.stepgen.02.enable 1
+# start haltalk server
+loadusr -W haltalk
