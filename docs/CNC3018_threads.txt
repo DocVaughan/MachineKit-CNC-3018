@@ -1,0 +1,10 @@
+Realtime Threads (flavor: rt-preempt, currently running) :
+     Period  FP CPU   Name                                          Time  Max-Time util  max  jitter-95%     flags
+    1000000  YES -1   servo-thread                                108744,   513802  10%  51%  +/- 3.31% 
+                    1 bb_gpio.write
+                    2 bb_gpio.read
+                    3 hpg.capture-position
+                    4 hpg.update
+                    5 motion-command-handler
+                    6 motion-controller
+

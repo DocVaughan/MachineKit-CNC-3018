@@ -1,0 +1,34 @@
+Signals:
+Type          Value  flags Name                   linked to:
+bit           FALSE  --    emcmot.00.enable     
+                                 <== axis.0.amp-enable-out
+                                 ==> bb_gpio.p9.out-13
+                                 ==> hpg.stepgen.00.enable
+float          -0.1  --    emcmot.00.pos-cmd    
+                                 <== axis.0.motor-pos-cmd
+                                 ==> hpg.stepgen.00.position-cmd
+bit           FALSE  --    emcmot.01.enable     
+                                 <== axis.1.amp-enable-out
+                                 ==> hpg.stepgen.01.enable
+float           0.3  --    emcmot.01.pos-cmd    
+                                 <== axis.1.motor-pos-cmd
+                                 ==> hpg.stepgen.01.position-cmd
+bit           FALSE  --    emcmot.02.enable     
+                                 <== axis.2.amp-enable-out
+                                 ==> hpg.stepgen.02.enable
+float     0.5258262  --    emcmot.02.pos-cmd    
+                                 <== axis.2.motor-pos-cmd
+                                 ==> hpg.stepgen.02.position-cmd
+bit           FALSE  --    estop-loop           
+                                 ==> iocontrol.0.emc-enable-in
+                                 <== iocontrol.0.user-enable-out
+float          -0.1  --    motor.00.pos-fb      
+                                 ==> axis.0.motor-pos-fb
+                                 <== hpg.stepgen.00.position-fb
+float           0.3  --    motor.01.pos-fb      
+                                 ==> axis.1.motor-pos-fb
+                                 <== hpg.stepgen.01.position-fb
+float     0.5258262  --    motor.02.pos-fb      
+                                 ==> axis.2.motor-pos-fb
+                                 <== hpg.stepgen.02.position-fb
+
