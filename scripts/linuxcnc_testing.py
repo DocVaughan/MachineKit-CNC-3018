@@ -50,6 +50,11 @@ for x in dir(status):
     if not x.startswith('_'):
         print x, getattr(status, x)
 
+# To write all the status info to a text file
+with open('CNC3018_linuxcnc_status.txt', 'w') as file:
+    for x in dir(status):
+      if not x.startswith('_'):
+          file.write(str(x) + ' ' + str(getattr(status, x)) + '\n'
 
 # Rest the e-stop and enable the axes
 command.state(linuxcnc.STATE_ESTOP_RESET)
@@ -179,8 +184,90 @@ else:
     print("Was not able to switch to auto mode")
 
 
+# -----  Parse the status to json for sending over MQTT -----
+import paho.mqtt.client as mqtt
 
+# The callback for when the client receives a CONNACK response from the server.
+def on_connect(client, userdata, flags, rc):
+    print("Connected with result code "+str(rc))
+
+    # Subscribing in on_connect() means that if we lose the connection and
+    # reconnect then subscriptions will be renewed.
+    client.subscribe("MachineKitMill/#")
     
+# The callback for when a PUBLISH message is received from the server.
+def on_message(client, userdata, msg):
+    print(msg.topic + " " + str(msg.payload))
+
+client = mqtt.Client()
+client.on_connect = on_connect
+# client.on_message = on_message
+
+client.connect("mqtt.eclipse.org", 1883, 60)
+client.loop()
+
+def start_running():
+    if ok_for_auto():
+        command.mode(linuxcnc.MODE_AUTO)
+        command.wait_complete()
+
+        # Now, we could step though the G-code one line at a time.
+        # command.auto(linuxcnc.AUTO_STEP)
+    
+        # Or, we can run the entire file, starting at line number START_LINE (zero indexed)
+        START_LINE = 0
+        command.auto(linuxcnc.AUTO_RUN, START_LINE)
+        command.wait_complete()
+
+        # Pause immediately after starting, if you want to step through the file 
+        # manually.
+        #command.auto(linuxcnc.AUTO_PAUSE)
+
+        status.poll()  # Get the current status
+
+        # The positions in this loop will update, but the g-code gets processed
+        # in advance of the move, so we won't be able to see the commands as they
+        # are run unless with manually 
+        #     command.auto(linuxcnc.AUTO_PAUSE) as above
+        # Then step through the g-code file in the loop
+
+def start_MQTT():
+    while (True):
+        status.poll()
+        # First define the dictionary that we'll convert to json before sending over MQTT
+        status_dict = {"exec_state": status.exec_state, 
+                       "interp_state": status.interp_state,
+                       "enabled": status.enabled,
+                       "estop": status.estop,
+                       "file": status.file,
+                       "motion_line": status.motion_line,
+                       "gCode_command": gcode_stringArray[status.motion_line],
+                       "position": status.position,
+                       "xAxis": {
+                            "enabled": status.axis[0]['enabled'],
+                            "fault": status.axis[0]['fault'],
+                            "homed": status.axis[0]['homed'],
+                            "velocity": status.axis[0]['velocity']},
+                       "yAxis": {
+                            "enabled": status.axis[1]['enabled'],
+                            "fault": status.axis[1]['fault'],
+                            "homed": status.axis[1]['homed'],
+                            "velocity": status.axis[1]['velocity']},
+                       "zAxis": {
+                            "enabled": status.axis[2]['enabled'],
+                            "fault": status.axis[2]['fault'],
+                            "homed": status.axis[2]['homed'],
+                            "velocity": status.axis[2]['velocity']},
+                       }
+
+        status_json = json.dumps(status_dict)
+        client.publish("MachineKitMill/", status_json, retain=True)
+
+        # Just publish every 0.1s
+        time.sleep(0.1)
+
+
+
 # Abort any running commands
 command.abort()
 
