@@ -1,0 +1,57 @@
+# Load the Mesa Elec hostmot
+loadrt hostmot2
+
+# Now, load the 7i92, which should be at IP address 192.168.1.121
+# loadrt hm2_eth board_ip=192.168.1.121
+loadrt hm2_eth board_ip=192.168.134.234
+
+# Load the siggen component
+loadrt siggen
+
+# And set up its parameters for motor testing
+setp siggen.0.frequency 0.125   # Hz
+setp siggen.0.amplitude 1.0     # Inches in this example
+
+# Increase the watchdog time to 100ms, since we're not mission critical
+setp hm2_7i92.0.watchdog.timeout_ns 100000000
+
+# Define the setup for the stepper output
+setp hm2_7i92.0.stepgen.00.step_type        0  # Default is step/dir
+setp hm2_7i92.0.stepgen.00.control-type     0  # Position mode control
+
+# Step generation timing parameters and system limits
+setp hm2_7i92.0.stepgen.00.dirsetup        2500    # ns
+setp hm2_7i92.0.stepgen.00.dirhold         2500    # ns
+setp hm2_7i92.0.stepgen.00.steplen         5000    # ns
+setp hm2_7i92.0.stepgen.00.stepspace       5000    # ns
+setp hm2_7i92.0.stepgen.00.position-scale  1600    # steps/inch travel
+setp hm2_7i92.0.stepgen.00.maxvel          1.0     # in/s
+setp hm2_7i92.0.stepgen.00.maxaccel        2.0     # in/s^2
+
+# Create a thread with a period of 1 millisecond
+newthread step-thread fp 1000000
+
+# Connect the cosine output to the hm2_7i92.0.00.position-cmd input
+net pos_sig siggen.0.cosine hm2_7i92.0.stepgen.00.position-cmd 
+
+# We add the slow thread for siggen and stepgen-update freq functions
+addf siggen.0.update             step-thread
+addf hm2_7i92.0.read             step-thread
+addf hm2_7i92.0.write            step-thread
+addf hm2_7i92.0.pet_watchdog     step-thread
+
+# And enable the step generation
+setp hm2_7i92.0.stepgen.00.enable 1
+
+# Finally, start the realtime thread
+# NOTE: I will often leave this commented out, use halrun in interactive mode, 
+# and start the thread manually
+# $ halrun -I -f hal_file_name.hal
+# halcmd: start
+#
+# start
+
+
+
+
+

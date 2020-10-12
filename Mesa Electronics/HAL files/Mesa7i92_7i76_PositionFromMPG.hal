@@ -1,0 +1,62 @@
+# Load the Mesa Elec hostmot
+loadrt hostmot2
+
+# Now, load the 7i92, which should be at IP address 192.168.1.121
+# loadrt hm2_eth board_ip=192.168.1.121
+loadrt hm2_eth board_ip=192.168.134.234
+
+# Load the scale component
+loadrt scale
+loadrt conv_s32_float
+
+# Increase the watchdog time to 100ms, since we're not mission critical
+setp hm2_7i92.0.watchdog.timeout_ns 100000000
+
+# Define the setup for the stepper output
+setp hm2_7i92.0.stepgen.00.step_type        0  # Default is step/dir
+setp hm2_7i92.0.stepgen.00.control-type     0  # Position mode control
+
+# Step generation timing parameters and system limits
+setp hm2_7i92.0.stepgen.00.dirsetup        2500    # ns
+setp hm2_7i92.0.stepgen.00.dirhold         2500    # ns
+setp hm2_7i92.0.stepgen.00.steplen         5000    # ns
+setp hm2_7i92.0.stepgen.00.stepspace       5000    # ns
+setp hm2_7i92.0.stepgen.00.position-scale  1600    # steps/inch travel
+setp hm2_7i92.0.stepgen.00.maxvel          1.0     # in/s
+setp hm2_7i92.0.stepgen.00.maxaccel        2.0     # in/s^2
+
+# Set the scaling of the encoder input - 400 pulses per rev
+setp scale.0.gain 0.0025
+
+# Convert the encoder counts to a float, then send it to be scaled
+net enc_conv hm2_7i92.0.encoder.00.count conv_s32_float.0.in
+net enc_sig  conv_s32_float.0.out scale.0.in
+
+# And connected the scaled value to the hm2_7i92.0.00.position-cmd input
+net pos_sig scale.0.out hm2_7i92.0.stepgen.00.position-cmd 
+
+# Create a thread with a period of 1 millisecond
+newthread step-thread fp 1000000
+
+# We add the functions to the thread
+addf hm2_7i92.0.read             step-thread
+addf hm2_7i92.0.write            step-thread
+addf hm2_7i92.0.pet_watchdog     step-thread
+addf conv_s32_float.0.funct      step-thread
+addf scale.0.funct               step-thread
+
+# Enable the step generation
+setp hm2_7i92.0.stepgen.00.enable 1
+
+# Finally, start the realtime thread
+# NOTE: I will often leave this commented out, use halrun in interactive mode, 
+# and start the thread manually
+# $ halrun -I -f hal_file_name.hal
+# halcmd: start
+#
+# start
+
+
+
+
+

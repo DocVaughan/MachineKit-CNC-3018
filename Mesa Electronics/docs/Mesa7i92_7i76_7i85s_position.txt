@@ -1,0 +1,687 @@
+HAL Components:
+    ID  Type Flags Inst Name                                      PID   State
+    66  rHAL   i      0 hal_lib                                   0     ready, u1:0 u2:0
+   717  uHAL   i      0 hal_lib20023                              20023 ready, u1:0 u2:0
+   721  uHAL   i      0 hal_lib20026                              20026 ready, u1:0 u2:0
+   719  User          0 halcmd20023                               20023 ready, u1:0 u2:0
+   723  User          0 halcmd20026                               20026 ready, u1:0 u2:0
+    80  RT            0 hm2_eth                                   RT    ready, u1:0 u2:0
+    78  RT            0 hostmot2                                  RT    ready, u1:0 u2:0
+   696  RT            0 siggen                                    RT    ready, u1:0 u2:0
+
+Instances:
+ Inst  Comp  Size  Name                                              Owner
+
+Component Pins:
+  Comp   Inst Type  Dir         Value  Name                                            Epsilon Flags  linked to:
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-00            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-00-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-01            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-01-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-02            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-02-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-03            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-03-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-04            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-04-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-05            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-05-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-06            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-06-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-07            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-07-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-08            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-08-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-09            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-09-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-10            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-10-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-11            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-11-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-12            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-12-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-13            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-13-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-14            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-14-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-15            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-15-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-16            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-16-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-17            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-17-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-18            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-18-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-19            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-19-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-20            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-20-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-21            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-21-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-22            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-22-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-23            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-23-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-24            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-24-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-25            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-25-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-26            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-26-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-27            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-27-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-28            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-28-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-29            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-29-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-30            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-30-not        		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-31            		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.7i76.0.0.input-31-not        		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-00           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-01           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-02           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-03           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-04           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-05           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-06           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-07           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-08           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-09           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-10           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-11           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-12           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-13           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-14           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.output-15           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.spindir             		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.7i76.0.0.spinena             		--l-
+    80        float IN              0  hm2_7i92.0.7i76.0.0.spinout             	0.000010	--l-
+    80        float IN            100  hm2_7i92.0.dpll.01.timer-us             	0.000010	--l-
+    80        float IN            100  hm2_7i92.0.dpll.02.timer-us             	0.000010	--l-
+    80        float IN            100  hm2_7i92.0.dpll.03.timer-us             	0.000010	--l-
+    80        float IN            100  hm2_7i92.0.dpll.04.timer-us             	0.000010	--l-
+    80        float IN             -1  hm2_7i92.0.dpll.base-freq-khz           	0.000010	--l-
+    80        u32   OUT    0x00000000  hm2_7i92.0.dpll.ddsize                  		--l-
+    80        float OUT             0  hm2_7i92.0.dpll.phase-error-us          	0.000010	--l-
+    80        u32   IN     0x00400000  hm2_7i92.0.dpll.plimit                  		--l-
+    80        u32   OUT    0x00000001  hm2_7i92.0.dpll.prescale                		--l-
+    80        u32   IN     0x0000A000  hm2_7i92.0.dpll.time-const              		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.00.count             		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.00.count-latched     		--l-
+    80        bit   I/O         FALSE  hm2_7i92.0.encoder.00.index-enable      		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.encoder.00.input-a           		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.encoder.00.input-b           		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.encoder.00.input-index       		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.00.latch-enable      		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.00.latch-polarity    		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.00.position          	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.encoder.00.position-latched  	0.000010	--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.00.quad-error        		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.00.quad-error-enable 		--l-
+    80        s32   OUT             4  hm2_7i92.0.encoder.00.rawcounts         		--l-
+    80        s32   OUT             4  hm2_7i92.0.encoder.00.rawlatch          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.00.reset             		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.00.velocity          	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.01.count             		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.01.count-latched     		--l-
+    80        bit   I/O         FALSE  hm2_7i92.0.encoder.01.index-enable      		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.01.input-a           		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.01.input-b           		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.encoder.01.input-index       		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.01.latch-enable      		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.01.latch-polarity    		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.01.position          	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.encoder.01.position-latched  	0.000010	--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.01.quad-error        		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.01.quad-error-enable 		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.01.rawcounts         		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.01.rawlatch          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.01.reset             		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.01.velocity          	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.02.count             		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.02.count-latched     		--l-
+    80        bit   I/O         FALSE  hm2_7i92.0.encoder.02.index-enable      		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.02.input-a           		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.02.input-b           		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.encoder.02.input-index       		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.02.latch-enable      		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.02.latch-polarity    		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.02.position          	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.encoder.02.position-latched  	0.000010	--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.02.quad-error        		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.02.quad-error-enable 		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.02.rawcounts         		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.02.rawlatch          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.02.reset             		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.02.velocity          	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.03.count             		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.03.count-latched     		--l-
+    80        bit   I/O         FALSE  hm2_7i92.0.encoder.03.index-enable      		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.encoder.03.input-a           		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.encoder.03.input-b           		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.encoder.03.input-index       		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.03.latch-enable      		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.03.latch-polarity    		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.03.position          	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.encoder.03.position-latched  	0.000010	--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.03.quad-error        		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.03.quad-error-enable 		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.03.rawcounts         		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.03.rawlatch          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.03.reset             		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.03.velocity          	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.04.count             		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.04.count-latched     		--l-
+    80        bit   I/O         FALSE  hm2_7i92.0.encoder.04.index-enable      		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.04.input-a           		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.04.input-b           		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.encoder.04.input-index       		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.04.latch-enable      		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.04.latch-polarity    		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.04.position          	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.encoder.04.position-latched  	0.000010	--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.04.quad-error        		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.04.quad-error-enable 		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.04.rawcounts         		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.04.rawlatch          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.04.reset             		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.04.velocity          	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.05.count             		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.05.count-latched     		--l-
+    80        bit   I/O         FALSE  hm2_7i92.0.encoder.05.index-enable      		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.05.input-a           		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.05.input-b           		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.encoder.05.input-index       		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.05.latch-enable      		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.05.latch-polarity    		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.05.position          	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.encoder.05.position-latched  	0.000010	--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.encoder.05.quad-error        		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.05.quad-error-enable 		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.05.rawcounts         		--l-
+    80        s32   OUT             0  hm2_7i92.0.encoder.05.rawlatch          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.encoder.05.reset             		--l-
+    80        float OUT             0  hm2_7i92.0.encoder.05.velocity          	0.000010	--l-
+    80        u32   IN     0x007F2815  hm2_7i92.0.encoder.muxed-sample-frequenc		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.encoder.muxed-skew           		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.000.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.000.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.001.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.001.in_not              		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.002.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.002.in_not              		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.003.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.003.in_not              		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.004.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.004.in_not              		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.005.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.005.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.006.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.006.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.007.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.007.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.008.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.008.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.009.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.009.in_not              		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.010.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.010.in_not              		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.011.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.011.in_not              		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.012.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.012.in_not              		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.gpio.012.out                 		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.013.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.013.in_not              		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.gpio.013.out                 		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.014.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.014.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.015.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.015.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.016.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.016.in_not              		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.017.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.017.in_not              		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.gpio.017.out                 		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.018.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.018.in_not              		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.gpio.018.out                 		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.019.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.019.in_not              		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.gpio.019.out                 		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.020.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.020.in_not              		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.gpio.020.out                 		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.021.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.021.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.022.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.022.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.023.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.023.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.024.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.024.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.025.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.025.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.026.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.026.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.027.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.027.in_not              		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.028.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.028.in_not              		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.029.in                  		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.029.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.030.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.030.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.031.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.031.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.032.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.032.in_not              		--l-
+    80        bit   OUT         FALSE  hm2_7i92.0.gpio.033.in                  		--l-
+    80        bit   OUT          TRUE  hm2_7i92.0.gpio.033.in_not              		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.led.CR01                     		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.led.CR02                     		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.led.CR03                     		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.led.CR04                     		--l-
+    80        s32   OUT             0  hm2_7i92.0.pet_watchdog.time            		----
+    80        s32   I/O             0  hm2_7i92.0.pet_watchdog.tmax            		----
+    80        bit   OUT         FALSE  hm2_7i92.0.pet_watchdog.tmax-inc        		----
+    80        s32   OUT             0  hm2_7i92.0.read.time                    		----
+    80        s32   I/O             0  hm2_7i92.0.read.tmax                    		----
+    80        bit   OUT         FALSE  hm2_7i92.0.read.tmax-inc                		----
+    80        u32   OUT    0x00000000  hm2_7i92.0.sserial.port-0.fault-count   		--l-
+    80        u32   OUT    0x00000000  hm2_7i92.0.sserial.port-0.port_state    		--l-
+    80        bit   IN           TRUE  hm2_7i92.0.sserial.port-0.run           		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.00.control-type      		--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.00.counts            		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.00.dbg_err_at_match  	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.00.dbg_ff_vel        	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.00.dbg_pos_minus_prev	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.00.dbg_s_to_match    	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.00.dbg_step_rate     		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.00.dbg_vel_error     	0.000010	--l-
+    80        u32   IN     0x000009C4  hm2_7i92.0.stepgen.00.dirhold           		--l-
+    80        u32   IN     0x000009C4  hm2_7i92.0.stepgen.00.dirsetup          		--l-
+    80        bit   IN           TRUE  hm2_7i92.0.stepgen.00.enable            		--l-
+    80        float IN              2  hm2_7i92.0.stepgen.00.maxaccel          	0.000010	--l-
+    80        float IN              1  hm2_7i92.0.stepgen.00.maxvel            	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.00.position-cmd      	0.000010	--l-	      <== tail-vel
+    80        float OUT             0  hm2_7i92.0.stepgen.00.position-fb       	0.000010	--l-
+    80        float IN          10160  hm2_7i92.0.stepgen.00.position-scale    	0.000010	--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.00.step_type         		--l-
+    80        u32   IN     0x00001388  hm2_7i92.0.stepgen.00.steplen           		--l-
+    80        u32   IN     0x00001388  hm2_7i92.0.stepgen.00.stepspace         		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.00.table-data-0      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.00.table-data-1      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.00.table-data-2      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.00.table-data-3      		--l-
+    80        float IN              0  hm2_7i92.0.stepgen.00.velocity-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.00.velocity-fb       	0.000010	--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.01.control-type      		--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.01.counts            		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.01.dbg_err_at_match  	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.01.dbg_ff_vel        	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.01.dbg_pos_minus_prev	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.01.dbg_s_to_match    	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.01.dbg_step_rate     		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.01.dbg_vel_error     	0.000010	--l-
+    80        u32   IN     0x00001388  hm2_7i92.0.stepgen.01.dirhold           		--l-
+    80        u32   IN     0x00001388  hm2_7i92.0.stepgen.01.dirsetup          		--l-
+    80        bit   IN           TRUE  hm2_7i92.0.stepgen.01.enable            		--l-
+    80        float IN              2  hm2_7i92.0.stepgen.01.maxaccel          	0.000010	--l-
+    80        float IN              1  hm2_7i92.0.stepgen.01.maxvel            	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.01.position-cmd      	0.000010	--l-	      <== dehead-vel
+    80        float OUT             0  hm2_7i92.0.stepgen.01.position-fb       	0.000010	--l-
+    80        float IN          10160  hm2_7i92.0.stepgen.01.position-scale    	0.000010	--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.01.step_type         		--l-
+    80        u32   IN     0x00001388  hm2_7i92.0.stepgen.01.steplen           		--l-
+    80        u32   IN     0x00001388  hm2_7i92.0.stepgen.01.stepspace         		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.01.table-data-0      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.01.table-data-1      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.01.table-data-2      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.01.table-data-3      		--l-
+    80        float IN              0  hm2_7i92.0.stepgen.01.velocity-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.01.velocity-fb       	0.000010	--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.02.control-type      		--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.02.counts            		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.02.dbg_err_at_match  	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.02.dbg_ff_vel        	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.02.dbg_pos_minus_prev	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.02.dbg_s_to_match    	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.02.dbg_step_rate     		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.02.dbg_vel_error     	0.000010	--l-
+    80        u32   IN     0x00001388  hm2_7i92.0.stepgen.02.dirhold           		--l-
+    80        u32   IN     0x00001388  hm2_7i92.0.stepgen.02.dirsetup          		--l-
+    80        bit   IN           TRUE  hm2_7i92.0.stepgen.02.enable            		--l-
+    80        float IN              1  hm2_7i92.0.stepgen.02.maxaccel          	0.000010	--l-
+    80        float IN            0.5  hm2_7i92.0.stepgen.02.maxvel            	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.02.position-cmd      	0.000010	--l-	      <== dehead-vel
+    80        float OUT             0  hm2_7i92.0.stepgen.02.position-fb       	0.000010	--l-
+    80        float IN          10160  hm2_7i92.0.stepgen.02.position-scale    	0.000010	--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.02.step_type         		--l-
+    80        u32   IN     0x00001388  hm2_7i92.0.stepgen.02.steplen           		--l-
+    80        u32   IN     0x00001388  hm2_7i92.0.stepgen.02.stepspace         		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.02.table-data-0      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.02.table-data-1      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.02.table-data-2      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.02.table-data-3      		--l-
+    80        float IN              0  hm2_7i92.0.stepgen.02.velocity-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.02.velocity-fb       	0.000010	--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.03.control-type      		--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.03.counts            		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.03.dbg_err_at_match  	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.03.dbg_ff_vel        	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.03.dbg_pos_minus_prev	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.03.dbg_s_to_match    	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.03.dbg_step_rate     		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.03.dbg_vel_error     	0.000010	--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.03.dirhold           		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.03.dirsetup          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.03.enable            		--l-
+    80        float IN              1  hm2_7i92.0.stepgen.03.maxaccel          	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.03.maxvel            	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.03.position-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.03.position-fb       	0.000010	--l-
+    80        float IN              1  hm2_7i92.0.stepgen.03.position-scale    	0.000010	--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.03.step_type         		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.03.steplen           		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.03.stepspace         		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.03.table-data-0      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.03.table-data-1      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.03.table-data-2      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.03.table-data-3      		--l-
+    80        float IN              0  hm2_7i92.0.stepgen.03.velocity-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.03.velocity-fb       	0.000010	--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.04.control-type      		--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.04.counts            		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.04.dbg_err_at_match  	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.04.dbg_ff_vel        	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.04.dbg_pos_minus_prev	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.04.dbg_s_to_match    	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.04.dbg_step_rate     		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.04.dbg_vel_error     	0.000010	--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.04.dirhold           		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.04.dirsetup          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.04.enable            		--l-
+    80        float IN              1  hm2_7i92.0.stepgen.04.maxaccel          	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.04.maxvel            	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.04.position-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.04.position-fb       	0.000010	--l-
+    80        float IN              1  hm2_7i92.0.stepgen.04.position-scale    	0.000010	--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.04.step_type         		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.04.steplen           		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.04.stepspace         		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.04.table-data-0      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.04.table-data-1      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.04.table-data-2      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.04.table-data-3      		--l-
+    80        float IN              0  hm2_7i92.0.stepgen.04.velocity-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.04.velocity-fb       	0.000010	--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.05.control-type      		--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.05.counts            		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.05.dbg_err_at_match  	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.05.dbg_ff_vel        	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.05.dbg_pos_minus_prev	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.05.dbg_s_to_match    	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.05.dbg_step_rate     		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.05.dbg_vel_error     	0.000010	--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.05.dirhold           		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.05.dirsetup          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.05.enable            		--l-
+    80        float IN              1  hm2_7i92.0.stepgen.05.maxaccel          	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.05.maxvel            	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.05.position-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.05.position-fb       	0.000010	--l-
+    80        float IN              1  hm2_7i92.0.stepgen.05.position-scale    	0.000010	--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.05.step_type         		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.05.steplen           		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.05.stepspace         		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.05.table-data-0      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.05.table-data-1      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.05.table-data-2      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.05.table-data-3      		--l-
+    80        float IN              0  hm2_7i92.0.stepgen.05.velocity-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.05.velocity-fb       	0.000010	--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.06.control-type      		--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.06.counts            		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.06.dbg_err_at_match  	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.06.dbg_ff_vel        	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.06.dbg_pos_minus_prev	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.06.dbg_s_to_match    	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.06.dbg_step_rate     		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.06.dbg_vel_error     	0.000010	--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.06.dirhold           		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.06.dirsetup          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.06.enable            		--l-
+    80        float IN              1  hm2_7i92.0.stepgen.06.maxaccel          	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.06.maxvel            	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.06.position-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.06.position-fb       	0.000010	--l-
+    80        float IN              1  hm2_7i92.0.stepgen.06.position-scale    	0.000010	--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.06.step_type         		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.06.steplen           		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.06.stepspace         		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.06.table-data-0      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.06.table-data-1      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.06.table-data-2      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.06.table-data-3      		--l-
+    80        float IN              0  hm2_7i92.0.stepgen.06.velocity-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.06.velocity-fb       	0.000010	--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.07.control-type      		--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.07.counts            		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.07.dbg_err_at_match  	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.07.dbg_ff_vel        	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.07.dbg_pos_minus_prev	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.07.dbg_s_to_match    	0.000010	--l-
+    80        s32   OUT             0  hm2_7i92.0.stepgen.07.dbg_step_rate     		--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.07.dbg_vel_error     	0.000010	--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.07.dirhold           		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.07.dirsetup          		--l-
+    80        bit   IN          FALSE  hm2_7i92.0.stepgen.07.enable            		--l-
+    80        float IN              1  hm2_7i92.0.stepgen.07.maxaccel          	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.07.maxvel            	0.000010	--l-
+    80        float IN              0  hm2_7i92.0.stepgen.07.position-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.07.position-fb       	0.000010	--l-
+    80        float IN              1  hm2_7i92.0.stepgen.07.position-scale    	0.000010	--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.07.step_type         		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.07.steplen           		--l-
+    80        u32   IN     0x00027FF6  hm2_7i92.0.stepgen.07.stepspace         		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.07.table-data-0      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.07.table-data-1      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.07.table-data-2      		--l-
+    80        u32   IN     0x00000000  hm2_7i92.0.stepgen.07.table-data-3      		--l-
+    80        float IN              0  hm2_7i92.0.stepgen.07.velocity-cmd      	0.000010	--l-
+    80        float OUT             0  hm2_7i92.0.stepgen.07.velocity-fb       	0.000010	--l-
+    80        s32   IN             -1  hm2_7i92.0.stepgen.timer-number         		--l-
+    80        bit   I/O         FALSE  hm2_7i92.0.watchdog.has_bit             		--l-
+    80        u32   I/O    0x05F5E100  hm2_7i92.0.watchdog.timeout_ns          		--l-
+    80        s32   OUT             0  hm2_7i92.0.write.time                   		----
+    80        s32   I/O             0  hm2_7i92.0.write.tmax                   		----
+    80        bit   OUT         FALSE  hm2_7i92.0.write.tmax-inc               		----
+   696        float IN              1  siggen.0.amplitude                      	0.000010	--l-
+   696        bit   OUT         FALSE  siggen.0.clock                          		--l-
+   696        float OUT             0  siggen.0.cosine                         	0.000010	--l-	      ==> tail-vel
+   696        float IN          0.125  siggen.0.frequency                      	0.000010	--l-
+   696        float IN              0  siggen.0.offset                         	0.000010	--l-
+   696        float OUT             0  siggen.0.sawtooth                       	0.000010	--l-
+   696        float OUT             0  siggen.0.sine                           	0.000010	--l-
+   696        float OUT             0  siggen.0.square                         	0.000010	--l-
+   696        float OUT             0  siggen.0.triangle                       	0.000010	--l-	      ==> dehead-vel
+   696        s32   OUT             0  siggen.0.update.time                    		----
+   696        s32   I/O             0  siggen.0.update.tmax                    		----
+   696        bit   OUT         FALSE  siggen.0.update.tmax-inc                		----
+    66        s32   OUT       4997585  step-thread.curr-period                 		----
+    66        s32   OUT             0  step-thread.time                        		----
+    66        s32   I/O             0  step-thread.tmax                        		----
+
+Signals:
+Type          Value  flags Name                   linked to:
+float             0  --    dehead-vel           
+                                 ==> hm2_7i92.0.stepgen.01.position-cmd
+                                 ==> hm2_7i92.0.stepgen.02.position-cmd
+                                 <== siggen.0.triangle
+float             0  --    tail-vel             
+                                 ==> hm2_7i92.0.stepgen.00.position-cmd
+                                 <== siggen.0.cosine
+
+Parameters:
+ Comp    Inst Type   Dir         Value  Name
+    80         u32   RO     0x00000009  hm2_7i92.0.7i76.0.0.nvbaudrate
+    80         u32   RO     0x00000000  hm2_7i92.0.7i76.0.0.nvencmode0
+    80         u32   RO     0x00000000  hm2_7i92.0.7i76.0.0.nvencmode1
+    80         u32   RO     0x100008E9  hm2_7i92.0.7i76.0.0.nvunitnumber
+    80         u32   RO     0x00000032  hm2_7i92.0.7i76.0.0.nvwatchdogtimeout
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-00-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-01-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-02-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-03-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-04-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-05-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-06-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-07-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-08-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-09-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-10-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-11-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-12-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-13-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-14-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.output-15-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.spindir-invert
+    80         bit   RW          FALSE  hm2_7i92.0.7i76.0.0.spinena-invert
+    80         float RW            100  hm2_7i92.0.7i76.0.0.spinout-maxlim
+    80         float RW              0  hm2_7i92.0.7i76.0.0.spinout-minlim
+    80         float RW            100  hm2_7i92.0.7i76.0.0.spinout-scalemax
+    80         u32   RO     0x0000000E  hm2_7i92.0.7i76.0.0.swrevision
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.00.counter-mode
+    80         bit   RW           TRUE  hm2_7i92.0.encoder.00.filter
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.00.index-invert
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.00.index-mask
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.00.index-mask-invert
+    80         float RW              1  hm2_7i92.0.encoder.00.scale
+    80         float RW            0.5  hm2_7i92.0.encoder.00.vel-timeout
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.01.counter-mode
+    80         bit   RW           TRUE  hm2_7i92.0.encoder.01.filter
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.01.index-invert
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.01.index-mask
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.01.index-mask-invert
+    80         float RW              1  hm2_7i92.0.encoder.01.scale
+    80         float RW            0.5  hm2_7i92.0.encoder.01.vel-timeout
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.02.counter-mode
+    80         bit   RW           TRUE  hm2_7i92.0.encoder.02.filter
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.02.index-invert
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.02.index-mask
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.02.index-mask-invert
+    80         float RW              1  hm2_7i92.0.encoder.02.scale
+    80         float RW            0.5  hm2_7i92.0.encoder.02.vel-timeout
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.03.counter-mode
+    80         bit   RW           TRUE  hm2_7i92.0.encoder.03.filter
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.03.index-invert
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.03.index-mask
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.03.index-mask-invert
+    80         float RW              1  hm2_7i92.0.encoder.03.scale
+    80         float RW            0.5  hm2_7i92.0.encoder.03.vel-timeout
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.04.counter-mode
+    80         bit   RW           TRUE  hm2_7i92.0.encoder.04.filter
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.04.index-invert
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.04.index-mask
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.04.index-mask-invert
+    80         float RW              1  hm2_7i92.0.encoder.04.scale
+    80         float RW            0.5  hm2_7i92.0.encoder.04.vel-timeout
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.05.counter-mode
+    80         bit   RW           TRUE  hm2_7i92.0.encoder.05.filter
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.05.index-invert
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.05.index-mask
+    80         bit   RW          FALSE  hm2_7i92.0.encoder.05.index-mask-invert
+    80         float RW              1  hm2_7i92.0.encoder.05.scale
+    80         float RW            0.5  hm2_7i92.0.encoder.05.vel-timeout
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.000.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.000.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.001.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.001.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.002.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.002.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.003.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.003.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.004.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.004.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.005.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.005.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.006.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.006.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.007.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.007.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.008.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.008.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.009.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.009.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.010.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.010.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.012.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.012.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.012.is_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.013.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.013.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.013.is_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.017.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.017.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.017.is_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.018.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.018.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.018.is_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.019.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.019.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.019.is_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.020.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.020.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.020.is_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.021.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.021.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.022.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.022.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.023.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.023.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.024.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.024.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.025.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.025.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.026.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.026.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.027.invert_output
+    80         bit   RW          FALSE  hm2_7i92.0.gpio.027.is_opendrain
+    80         bit   RW          FALSE  hm2_7i92.0.io_error
+    80         u32   RW     0x00000001  hm2_7i92.0.sserial.port-0.fault-dec
+    80         u32   RW     0x0000000A  hm2_7i92.0.sserial.port-0.fault-inc
+    80         u32   RW     0x000000C8  hm2_7i92.0.sserial.port-0.fault-lim
+
+Exported Functions:
+  Comp   Inst CodeAddr      Arg           FP   Users Type    Name
+    66        0000b602e74d  000000000000  NO       0 user    delinst
+    80        0000b4d79f3f  00000143b0b8  NO       1 xthread hm2_7i92.0.pet_watchdog
+    80        0000b4d3742f  00000143b0b8  YES      1 xthread hm2_7i92.0.read
+    80        0000b4d374f5  00000143b0b8  YES      1 xthread hm2_7i92.0.write
+    66        0000b602e605  000000000000  NO       0 user    newinst
+   696        0000b4f2c205  0000b5ff90f8  YES      1 thread  siggen.0.update
+
+Realtime Threads (flavor: rt-preempt, currently stopped) :
+     Period  FP CPU   Name                                          Time  Max-Time util  max  jitter-95%     flags
+    5000000  YES -1   step-thread                                      0,        0   0%   0%  +/- 0.00% 
+                    1 siggen.0.update
+                    2 hm2_7i92.0.read
+                    3 hm2_7i92.0.write
+                    4 hm2_7i92.0.pet_watchdog
+
+
+Rings:
+ID    Name                                     Size       Type   Rdr Wrt Ref Flags 
+
+Exported vtables:
+ID      Name                                           Version Refcnt  Context Owner
+
+Epsilon	Value
+0	0.000010
+1	0.000000
+2	0.000000
+3	0.000000
+4	0.000000
+
